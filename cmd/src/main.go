@@ -17,5 +17,16 @@ func main() {
 		"blue":  "0000ff",
 	}
 
+	//in this second method we can see that the mad is created and then added too. but whats important to note is that the key and value
+	//are of difrent types , the key is of type string, and the value is type int. all keys must be of type strng, and all values must be
+	//of type int. this is a rule of maps.
+	//2.
+	letters := make(map[string]int)
+
+	letters["a"] = 065
+	letters["b"] = 066
+	letters["c"] = 067
+
 	fmt.Println(colours)
+	fmt.Println(letters)
 }
