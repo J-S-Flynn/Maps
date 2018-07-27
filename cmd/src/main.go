@@ -29,4 +29,19 @@ func main() {
 
 	fmt.Println(colours)
 	fmt.Println(letters)
+
+	//we can also print the valus of a key by useing the key as a refrence
+	fmt.Println("The Ascii valus of A is : ", letters["a"])
+
+	printMap(colours)
+}
+
+//itterates through the map
+func printMap(m map[string]string) {
+
+	//print a single key value pair from piont n in the range of m where m is the length of the map
+	for key, value := range m {
+
+		fmt.Printf("the key is : %v, the value is : %v \n", key, value)
+	}
 }
